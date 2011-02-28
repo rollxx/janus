@@ -37,6 +37,9 @@ set noequalalways
 let NERDTreeIgnore=['\.rbc$', '\~$']
 map <Leader>n :NERDTreeToggle<CR>
 
+" ANTLR3 syntax support
+au BufRead,BufNewFile *.g set syntax=antlr3
+
 " Command-T configuration
 let g:CommandTMaxHeight=20
 
