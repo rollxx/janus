@@ -136,7 +136,7 @@ vim_plugin_task "surround",         "git://github.com/tpope/vim-surround.git"
 vim_plugin_task "taglist",          "git://github.com/vim-scripts/taglist.vim.git"
 vim_plugin_task "vividchalk",       "git://github.com/tpope/vim-vividchalk.git"
 vim_plugin_task "supertab",         "git://github.com/ervandew/supertab.git"
-vim_plugin_task "cucumber",         "git://github.com/tpope/vim-cucumber.git"
+# vim_plugin_task "cucumber",         "git://github.com/tpope/vim-cucumber.git"
 vim_plugin_task "textile",          "git://github.com/timcharper/textile.vim.git"
 # vim_plugin_task "rails",            "git://github.com/tpope/vim-rails.git"
 # vim_plugin_task "rspec",            "git://github.com/taq/vim-rspec.git"
@@ -146,7 +146,7 @@ vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
 vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
 vim_plugin_task "searchfold",       "git://github.com/vim-scripts/searchfold.vim.git"
-vim_plugin_task "endwise",          "git://github.com/tpope/vim-endwise.git"
+# vim_plugin_task "endwise",          "git://github.com/tpope/vim-endwise.git"
 # vim_plugin_task "irblack",          "git://github.com/wgibbs/vim-irblack.git"
 # vim_plugin_task "vim-coffee-script","git://github.com/kchmck/vim-coffee-script.git"
 vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
@@ -199,17 +199,17 @@ end
 vim_plugin_task "molokai" do
   sh "curl https://github.com/mrtazz/molokai.vim/raw/master/colors/molokai.vim > colors/molokai.vim"
 end
-vim_plugin_task "mustache" do
-  sh "curl https://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
-  File.open(File.expand_path('../ftdetect/mustache.vim', __FILE__), 'w') do |file|
-    file << "au BufNewFile,BufRead *.mustache        setf mustache"
-  end
-end
-vim_plugin_task "arduino","git://github.com/vim-scripts/Arduino-syntax-file.git" do
-  File.open(File.expand_path('../ftdetect/arduino.vim', __FILE__), 'w') do |file|
-    file << "au BufNewFile,BufRead *.pde             setf arduino"
-  end
-end
+# vim_plugin_task "mustache" do
+#   sh "curl https://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
+#   File.open(File.expand_path('../ftdetect/mustache.vim', __FILE__), 'w') do |file|
+#     file << "au BufNewFile,BufRead *.mustache        setf mustache"
+#   end
+# end
+# vim_plugin_task "arduino","git://github.com/vim-scripts/Arduino-syntax-file.git" do
+#   File.open(File.expand_path('../ftdetect/arduino.vim', __FILE__), 'w') do |file|
+#     file << "au BufNewFile,BufRead *.pde             setf arduino"
+#   end
+# end
 vim_plugin_task "vwilight" do
   sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
 end
